@@ -1,0 +1,10 @@
+.game-log-container {
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+}
+
+.log-feed { 
+    flex: 1;
+    padding: 24px;
+}

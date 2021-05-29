@@ -1,0 +1,10 @@
+<div class="log-input-container">
+    <input #amount type="number" placeholder="Amount">
+    <select class="log-type-select" #type>
+        <option *ngFor="let type of types">{{type}}</option>
+    </select>
+    <select #damageType [ngClass]="{'hidden': type.value != 'Damage'}">
+        <option *ngFor="let damageType of damageTypes">{{damageType}}</option>
+    </select>
+    <button [disabled]="amount.value === ''" (click)="submit(amount.value, type.value, damageType.value)">Submit</button>
+</div>

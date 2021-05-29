@@ -1,1 +1,9 @@
-<p>game-log works!</p>
+<div class="game-log-container">
+    <app-top-bar (nameUpdated)="OnUpdateCharacterName($event)"></app-top-bar>
+    <div class="log-feed">
+        <div class="log-entry" *ngFor="let log of Logs">
+            {{log.Character}} {{log.Amount}} {{log.DamageType}} {{log.Type}}
+        </div>
+    </div>
+    <app-log-input [CharacterName]="this.CharacterName" class="log-input"></app-log-input>
+</div>  

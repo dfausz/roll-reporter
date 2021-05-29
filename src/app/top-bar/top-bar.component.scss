@@ -1,0 +1,26 @@
+//https://coolors.co/02111b-3f4045-30292f-5d737e-fcfcfc 
+//https://coolors.co/2b2d42-e0c1b3-72b01d-3f7d20-648381
+.top-bar-container {
+    display: flex;
+    align-items: center ;
+    padding: 8px;
+    height: 50px;
+    background-color: #648381;
+}
+
+.title {
+    color: white;
+    font-size: 18pt;
+    vertical-align: center;
+}
+
+.icon-tray {
+    flex: 1;
+    display: flex;
+    justify-content: flex-end;
+}
+
+.icon-button {
+    background-color: transparent;
+    color: white;
+}

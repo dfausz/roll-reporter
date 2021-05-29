@@ -1,0 +1,11 @@
+<div>
+    <form class="example-form">
+        <mat-form-field class="form-field">
+            <mat-label>Character Name</mat-label>
+            <input #characterName matInput [value]="this.data.name !== undefined ? this.data.name : ''">
+        </mat-form-field>
+    </form>
+    <div class="okay-button-container">
+        <button (click)="closeDialog(characterName.value)" mat-raised-button>Okay</button>
+    </div>
+</div>

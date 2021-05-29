@@ -1,0 +1,14 @@
+<div class="top-bar-container">
+    <div class="title">Roll Reporter</div>
+    <div class="icon-tray">
+        <button (click)="openCharacterNameDialog()" class="icon-button" mat-icon-button>
+            <mat-icon>person_outline</mat-icon>
+        </button>
+        <button [matMenuTriggerFor]="menu" class="icon-button" mat-icon-button>
+            <mat-icon>more_vert</mat-icon>
+        </button>
+        <mat-menu #menu="matMenu">
+            <button (click)="clearLogs()" mat-menu-item>Clear All Logs</button>
+        </mat-menu>
+    </div>
+</div>
