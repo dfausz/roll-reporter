@@ -18,6 +18,7 @@ export class GameLogComponent implements OnInit, AfterViewInit {
   constructor(private route: ActivatedRoute, private dataService: DataService) { 
     this.route.paramMap.subscribe(params => {
       localStorage.setItem('dataServiceId', params.get('dataServiceId'));
+      this.dataService.dbUID = params.get('dataServiceId');
       this.dataService.SubscribeToLogs(this.UpdateLogs, this);
     });
   }
