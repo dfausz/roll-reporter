@@ -7,4 +7,27 @@
 .log-feed { 
     flex: 1;
     padding: 24px;
+    overflow: auto;
+}
+
+.log-entry {
+    display: flex;
+    margin: 6px 0;
+
+    .name,.amount {
+        font-size: 18pt;
+        margin-right: 8px;
+        align-self: center;
+    }
+
+    .type{
+        margin-right: 16px;
+        margin-top: 4px;
+
+        svg {
+            width: 64px;
+            height: auto;
+            opacity: 45%;
+        }
+    }
 }

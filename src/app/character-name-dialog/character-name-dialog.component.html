@@ -6,6 +6,6 @@
         </mat-form-field>
     </form>
     <div class="okay-button-container">
-        <button (click)="closeDialog(characterName.value)" mat-raised-button>Okay</button>
+        <button [mat-dialog-close]="characterName.value" mat-raised-button>Okay</button>
     </div>
 </div>

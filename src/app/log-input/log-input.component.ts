@@ -33,6 +33,8 @@ export class LogInputComponent implements OnInit {
     "Damage"
   ]
 
+  selectedType = "Check";
+
   constructor(private dataService: DataService) { }
 
   ngOnInit(): void {
@@ -50,7 +52,9 @@ export class LogInputComponent implements OnInit {
       DamageType: type === "Damage" ? damageType : "None"
     }
     
-    this.dataService.CreateLog(log);
+    if(amount != "") {
+      this.dataService.CreateLog(log);
+    }
   }
 
 }

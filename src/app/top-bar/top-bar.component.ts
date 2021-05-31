@@ -2,6 +2,7 @@ import { Component, OnInit, Output, EventEmitter } from '@angular/core';
 import { DataService } from '../data.service';
 import { MatDialog } from '@angular/material/dialog';
 import { CharacterNameDialogComponent } from '../character-name-dialog/character-name-dialog.component';
+import { CreditsComponent } from '../credits/credits.component';
 
 @Component({
   selector: 'app-top-bar',
@@ -28,5 +29,9 @@ export class TopBarComponent implements OnInit {
 
   clearLogs() {
     this.dataService.ClearLogs();
+  }
+
+  openCreditsDialog() {
+    this.dialog.open(CreditsComponent);
   }
 }

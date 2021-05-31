@@ -14,6 +14,7 @@ export class DataService {
 
   constructor() { 
     this.database = firebase.database();
+    this.dbUID = localStorage.getItem("dataServiceId");
   }
 
   SubscribeToLogs(updateLogs: Function, gameLogComponent: GameLogComponent)  {
