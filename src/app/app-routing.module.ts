@@ -3,7 +3,8 @@ import { RouterModule, Routes } from '@angular/router';
 import { GameLogComponent } from './game-log/game-log.component';
 
 const routes: Routes = [
-  { path: "roll/:dataServiceId", component: GameLogComponent }
+  { path: "roll/:dataServiceId", component: GameLogComponent },
+  { path: "**", component: GameLogComponent }
 ];
 
 @NgModule({
