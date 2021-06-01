@@ -1,0 +1,17 @@
+<div class="number-pad">
+    <div *ngFor="let group of numbers">
+        <div class="number-grouping">
+            <div *ngFor="let number of group">
+                <button (click)="changeNumber(number)" class="number-fab" mat-fab>{{ number }}</button>
+                <div class="break"></div>
+            </div>
+        </div>
+    </div>
+    <div class="number-grouping">
+        <button (click)="backspace()" class="number-fab" mat-fab><mat-icon>backspace</mat-icon></button>
+        <button (click)="changeNumber(0)" class="number-fab" mat-fab>0</button>
+        <button (click)="submit()" class="okay-button number-fab" mat-fab> 
+            <mat-icon>send</mat-icon>
+        </button>
+    </div>
+</div>

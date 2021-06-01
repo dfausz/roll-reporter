@@ -1,0 +1,29 @@
+@import "src/variables";
+
+.number-pad { 
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+    justify-content: center;
+}
+
+.number-grouping {
+    display: flex;
+}
+
+.number-fab {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-color: $toHit;
+    margin: 4px;
+    font-size: 18pt;
+}
+
+.okay-button {
+    background-color: $base;
+
+    &:hover {
+        background-color: lighten($base, 10%);
+    }
+}

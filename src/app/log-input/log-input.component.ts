@@ -43,18 +43,4 @@ export class LogInputComponent implements OnInit {
       this.CharacterName = randomName;
     }
   }
-
-  submit(amount, type, damageType) {
-    let log: Log = {
-      Character: this.CharacterName,
-      Amount: amount,
-      Type: type,
-      DamageType: type === "Damage" ? damageType : "None"
-    }
-    
-    if(amount != "") {
-      this.dataService.CreateLog(log);
-    }
-  }
-
 }

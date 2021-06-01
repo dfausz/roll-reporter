@@ -20,6 +20,7 @@ import {MatSelectModule} from '@angular/material/select';
 import {MatDividerModule} from '@angular/material/divider';
 import {MatProgressSpinnerModule} from '@angular/material/progress-spinner';
 import { CreditsComponent } from './credits/credits.component';
+import { NumberPadComponent } from './number-pad/number-pad.component';
 
 @NgModule({
   declarations: [
@@ -28,7 +29,8 @@ import { CreditsComponent } from './credits/credits.component';
     LogInputComponent,
     TopBarComponent,
     CharacterNameDialogComponent,
-    CreditsComponent
+    CreditsComponent,
+    NumberPadComponent
   ],
   imports: [
     BrowserModule,
