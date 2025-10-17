@@ -4,6 +4,8 @@
 **Roll Reporter** is a lightweight, mobile-friendly **Angular** web app built to track and share dice rolls during online D&D sessions.  
 It was designed to eliminate confusion when rolls are called out over voice chat but not clearly heard — keeping everyone in sync and focused on the game.
 
+<img width="1164" height="786" alt="image" src="https://github.com/user-attachments/assets/39531875-ce42-4d15-af4b-4908b6d26c40" />
+
 ---
 
 ## 🧰 Tech Stack
